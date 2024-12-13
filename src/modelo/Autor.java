@@ -8,6 +8,7 @@ package modelo;
  *
  * @author Tiririn
  */
+<<<<<<< HEAD
 public class Autor extends Persona{
     
     private int id;
@@ -48,3 +49,46 @@ public class Autor extends Persona{
     
     
 }
+=======
+public class Autor extends Persona {
+    private int id;
+    private String areaEspecializacion;
+
+    // Constructor para el nombre del autor
+    public Autor(String autorTexto) {
+        super("", autorTexto, "", ""); 
+    }
+
+    public Autor(int id, String areaEspecializacion) {
+        this.id = id;
+        this.areaEspecializacion = areaEspecializacion;
+    }
+
+ 
+    public Autor(String cedula, String nombre, String apellido, String ciudad, String areaEspecializacion) {
+        super(cedula, nombre, apellido, ciudad);
+        this.areaEspecializacion = areaEspecializacion;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getAreaEspecializacion() {
+        return areaEspecializacion;
+    }
+
+    public void setAreaEspecializacion(String areaEspecializacion) {
+        this.areaEspecializacion = areaEspecializacion;
+    }
+
+    @Override
+    public String toString() {
+        return "" + "Nombre=" + getNombre() + "";
+    }
+}
+>>>>>>> Isaac_branch

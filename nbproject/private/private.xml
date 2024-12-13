@@ -4,7 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Tiririn/Documents/NetBeansProjects/ExamenParcial_Tirira__Vargas/src/modelo/Libro.java</file>
-            <file>file:/C:/Users/Tiririn/Documents/NetBeansProjects/ExamenParcial_Tirira__Vargas/src/vista/Main.java</file>
+            <file>file:/C:/Users/Tiririn/Documents/NetBeansProjects/ExamenParcial_Tirira__Vargas/src/modelo/Disponibilidad.java</file>
+            <file>file:/C:/Users/Tiririn/Documents/NetBeansProjects/ExamenParcial_Tirira__Vargas/src/modelo/Persona.java</file>
+            <file>file:/C:/Users/Tiririn/Documents/NetBeansProjects/ExamenParcial_Tirira__Vargas/src/modelo/Autor.java</file>
+            <file>file:/C:/Users/Tiririn/Documents/NetBeansProjects/ExamenParcial_Tirira__Vargas/src/modelo/Prestamo.java</file>
             <file>file:/C:/Users/Tiririn/Documents/NetBeansProjects/ExamenParcial_Tirira__Vargas/src/vista/libro_GUI.java</file>
         </group>
     </open-files>
