@@ -10,57 +10,61 @@ package modelo;
  */
 public class Persona  {
 
-    private String Cedula;
-        private String Nombre;
-        private String Apellido;
-
-        private String Ciudad;
+    private String cedula;
+        private String nombre;
+        private String apellido;
+        private String ciudad;
 
         public Persona(){
 
     }
 
         public Persona(String Cedula, String Nombre, String Apellido, String Ciudad) {
-            this.Cedula = Cedula;
-            this.Nombre = Nombre;
-            this.Apellido = Apellido;
-            this.Ciudad = Ciudad;
+            this.cedula = Cedula;
+            this.nombre = Nombre;
+            this.apellido = Apellido;
+            this.ciudad = Ciudad;
         }
 
         public String getCedula() {
-            return Cedula;
+            return cedula;
         }
 
         public void setCedula(String Cedula) {
-            this.Cedula = Cedula;
+            this.cedula = Cedula;
         }
 
         public String getNombre() {
-            return Nombre;
+            return nombre;
         }
 
         public void setNombre(String Nombre) {
-            this.Nombre = Nombre;
+            this.nombre = Nombre;
         }
 
         public String getApellido() {
-            return Apellido;
+            return apellido;
         }
 
         public void setApellido(String Apellido) {
-            this.Apellido = Apellido;
+            this.apellido = Apellido;
         }
 
         public String getCiudad() {
-            return Ciudad;
+            return ciudad;
         }
 
         public void setCiudad(String Ciudad) {
-            this.Ciudad = Ciudad;
+            this.ciudad = Ciudad;
         }
 
-        @Override
-        public String toString() {
-            return "Persona{" + "Cedula=" + Cedula + ", Nombre=" + Nombre + ", Apellido=" + Apellido + ", Ciudad=" + Ciudad + '}';
-        }
+       @Override
+    public String toString() {
+        return "Persona{" +
+                "cedula='" + cedula + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", ciudad='" + ciudad + '\'' +
+                '}';
+    }
 }

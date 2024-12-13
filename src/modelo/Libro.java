@@ -13,7 +13,7 @@ public class Libro implements Disponibilidad {
     private int id;
     private  int isbn;
     private String  titulo;
-    private String autor;
+    private Autor autor;
     private boolean disponible;
     
 
@@ -21,11 +21,11 @@ public class Libro implements Disponibilidad {
         this.disponible = true; 
     }
 
-    public Libro(int id, int isbn, String titulo, String autor, boolean disponible) {
-        this.id = id;
+    public Libro(int id, int isbn, String titulo, String autorTexto, boolean disponible) {
+      this.id = id;
         this.isbn = isbn;
         this.titulo = titulo;
-        this.autor = autor;
+        this.autor = new Autor(autorTexto); 
         this.disponible = disponible;
     }
 
@@ -53,11 +53,11 @@ public class Libro implements Disponibilidad {
         this.titulo = titulo;
     }
 
-    public String getAutor() {
+    public Autor getAutor() {
         return autor;
     }
 
-    public void setAutor(String autor) {
+    public void setAutor(Autor autor) {
         this.autor = autor;
     }
 
@@ -68,10 +68,14 @@ public class Libro implements Disponibilidad {
     public void setDisponible(boolean disponible) {
         this.disponible = disponible;
     }
-    
-     @Override
+ @Override
     public String toString() {
-        return "ID: " + id + "\nISBN: " + isbn + "\nTítulo: " + titulo + "\nAutor: " + autor + "\nEstado: " + (disponible ? "Disponible" : "No Disponible");
+ 
+        return "ID: " + id + "\n" +
+               "ISBN: " + isbn + "\n" +
+               "Título: " + titulo + "\n" +
+               "Autor: " + autor+  "\n" +
+               "Estado: " + (disponible ? "Disponible" : "No disponible");
     }
 
    @Override
@@ -88,9 +92,6 @@ public class Libro implements Disponibilidad {
     public void marcarNoDisponible() {
         this.disponible = false; 
     }
-
-
-    
     
 }
 

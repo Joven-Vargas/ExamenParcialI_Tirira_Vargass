@@ -5,6 +5,7 @@
 package vista;
 
 import javax.swing.JTextField;
+import modelo.Autor;
 import modelo.Libro;
 
 /**
@@ -199,18 +200,19 @@ public class libro_GUI extends javax.swing.JFrame {
     private void jbnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbnCrearActionPerformed
         // TODO add your handling code here:
   String idText = txtid.getText();
-    String isbnText = txtISBN.getText().trim();
+String isbnText = txtISBN.getText().trim();
+String titulo = txtTituloLibro.getText().trim();
+String autorTextoString = txtAutor.getText().trim();  
+boolean disponible = CboxEstado.getSelectedItem().toString().equalsIgnoreCase("Disponible");
 
-    int id = idText.isEmpty() ? 0 : Integer.parseInt(idText); 
-    int isbn = isbnText.isEmpty() ? 0 : Integer.parseInt(isbnText);
-    String titulo = txtTituloLibro.getText().trim();
-    String autor = txtAutor.getText().trim(); 
-    boolean disponible = CboxEstado.getSelectedItem().toString().equalsIgnoreCase("Disponible"); // Determina el estado
-    Libro nuevoLibro = new Libro(id, isbn, titulo, autor, disponible);
+int id = idText.isEmpty() ? 0 : Integer.parseInt(idText); 
+int isbn = isbnText.isEmpty() ? 0 : Integer.parseInt(isbnText);
 
-     
-    String resultadoAnterior = txtCreacion.getText();
-    txtCreacion.setText(resultadoAnterior + "\nLibro creado:\n" + nuevoLibro.toString());
+Libro nuevoLibro = new Libro(id, isbn, titulo, autorTextoString, disponible);
+
+String resultadoAnterior = txtCreacion.getText();
+txtCreacion.setText(resultadoAnterior + "\nLibro creado:\n" + nuevoLibro.toString());
+
     }//GEN-LAST:event_jbnCrearActionPerformed
 
     private void txtidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtidActionPerformed

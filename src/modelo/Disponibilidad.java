@@ -9,8 +9,8 @@ package modelo;
  * @author Tiririn
  */
 public interface Disponibilidad {
-        boolean disponibilidad();
     
+        boolean disponibilidad();
     void marcarDisponible();
     
     void marcarNoDisponible();
