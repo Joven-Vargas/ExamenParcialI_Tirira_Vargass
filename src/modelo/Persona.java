@@ -10,57 +10,59 @@ package modelo;
  */
 public class Persona  {
 
-    private String Cedula;
-        private String Nombre;
-        private String Apellido;
+    private String cedula;
+        private String nombre;
+        private String apellido;
 
-        private String Ciudad;
+        private String ciudad;
 
         public Persona(){
 
     }
 
-        public Persona(String Cedula, String Nombre, String Apellido, String Ciudad) {
-            this.Cedula = Cedula;
-            this.Nombre = Nombre;
-            this.Apellido = Apellido;
-            this.Ciudad = Ciudad;
-        }
+    public Persona(String cedula, String nombre, String apellido, String ciudad) {
+        this.cedula = cedula;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.ciudad = ciudad;
+    }
 
-        public String getCedula() {
-            return Cedula;
-        }
+    public String getCedula() {
+        return cedula;
+    }
 
-        public void setCedula(String Cedula) {
-            this.Cedula = Cedula;
-        }
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
 
-        public String getNombre() {
-            return Nombre;
-        }
+    public String getNombre() {
+        return nombre;
+    }
 
-        public void setNombre(String Nombre) {
-            this.Nombre = Nombre;
-        }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
-        public String getApellido() {
-            return Apellido;
-        }
+    public String getApellido() {
+        return apellido;
+    }
 
-        public void setApellido(String Apellido) {
-            this.Apellido = Apellido;
-        }
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
 
-        public String getCiudad() {
-            return Ciudad;
-        }
+    public String getCiudad() {
+        return ciudad;
+    }
 
-        public void setCiudad(String Ciudad) {
-            this.Ciudad = Ciudad;
-        }
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
 
+        
+      
         @Override
         public String toString() {
-            return "Persona{" + "Cedula=" + Cedula + ", Nombre=" + Nombre + ", Apellido=" + Apellido + ", Ciudad=" + Ciudad + '}';
+            return "Persona{" + "Cedula=" + cedula + ", Nombre=" + nombre + ", Apellido=" + apellido + ", Ciudad=" + ciudad + '}';
         }
 }

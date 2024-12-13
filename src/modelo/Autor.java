@@ -10,8 +10,8 @@ package modelo;
  */
 public class Autor extends Persona{
     
-    private int Id;
-    private String AreaEspecializacion;
+    private int id;
+    private String areaEspecializacion;
     
     
     public Autor (){
@@ -19,9 +19,32 @@ public class Autor extends Persona{
     }
 
     public Autor(int Id, String AreaEspecializacion) {
-        this.Id = Id;
-        this.AreaEspecializacion = AreaEspecializacion;
+        this.id = Id;
+        this.areaEspecializacion = AreaEspecializacion;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int Id) {
+        this.id = Id;
+    }
+
+    public String getAreaEspecializacion() {
+        return areaEspecializacion;
+    }
+
+    public void setAreaEspecializacion(String AreaEspecializacion) {
+        this.areaEspecializacion = AreaEspecializacion;
+    }
+
+    @Override
+    public String toString() {
+        return "Autor{" + "id=" + id + ", areaEspecializacion=" + areaEspecializacion + '}';
+    }
+    
+    
     
     
 }
